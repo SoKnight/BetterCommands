@@ -1,0 +1,180 @@
+# Частые ошибки
+error-no-args: "&cНеверное использование команды. Используйте '/bcommands help' для помощи."
+error-wrong-syntax: "&cНеверный синтаксис команды. Используйте '/bcommands help' для помощи."
+error-command-not-found: "&cКоманда не найдена. Используйте '/bcommands help' для помощи."
+error-only-for-players: "&cТолько игрок может использовать данную команду."
+error-no-permissions: "&cНедостаточно прав."
+error-arg-is-not-int: "&cАргумент '%arg%' должен быть числом."
+error-unknown-world: "&cМир '%world%' не существует."
+error-player-not-found: "&cИгрок '%player%' не найден."
+error-unknown-player: "&cИгрок '%player%' никогда не был на сервере."
+
+# Управление временем
+time-set-morning: "&fУстановлено утреннее время суток в мире &b%world%&f."
+time-set-day: "&fУстановлено дневное время суток в мире &b%world%&f."
+time-set-evening: "&fУстановлено вечернее время суток в мире &b%world%&f."
+time-set-night: "&fУстановлено ночное время суток в мире &b%world%&f."
+time-clocks: "&fСейчас &b%time% &fв мире &b%world%&f."
+
+# Управление погодой
+time-weather-sun: "&fВ мире &b%world% &fтеперь солнечно."
+time-weather-sun-already: "&cВ мире %world% итак солнечно."
+time-weather-rain: "&fВ мире &b%world% &fтеперь идёт дождь."
+time-weather-rain-already: "&cВ мире %world% уже идёт дождь."
+time-weather-storm: "&fВ мире &b%world% &fтеперь гроза."
+time-weather-storm-already: "&cВ мире %world% уже идёт гроза."
+
+# Восстановление здоровья
+heal-self: "&fВы вылечили себя. &7(%from% -> %to%)"
+heal-self-already: "&cВы вполне здоровы."
+heal-other: "&fВы вылечили игрока &b%player%&f. &7(%from% -> %to%)"
+heal-other-already: "&cИгрок %player% вполне здоров."
+
+# Восстановление сытости
+feed-self: "&fВаша сытость восстановлена. &7(%from% -> %to%)"
+feed-self-already: "&cВы достаточно сыты."
+feed-other: "&fСытость игрока &b%player% &fвосстановлена. &7(%from% -> %to%)"
+feed-other-already: "&cИгрок %player% не голоден."
+
+# Управление игровым режимом
+gamemode-unknown: "&cНеизвестный режим игры '%gamemode%', укажите один из: 0, 1, 2, 3, ad, cr, sr, sp"
+gamemode-self: "&fВаш игровой режим изменён на &b%gamemode%&f."
+gamemode-self-already: "&cВы уже находитесь в режиме %gamemode%."
+gamemode-other: "&fИгровой режим игрока &b%player% &fизменён на &b%gamemode%&f."
+gamemode-other-already: "&cИгрок %player% уже находится в режиме %gamemode%."
+gamemode-adventure: "Приключение"
+gamemode-creative: "Креатив"
+gamemode-spectator: "Наблюдатель"
+gamemode-survival: "Выживание"
+
+# Накладывание зачарований
+enchant-unknown-enchantment: "&cНеизвестное зачарование '%enchantment%', используйте подсказки над полем ввода."
+enchant-wrong-level: "&cНеправильный уровень зачарования, укажите значени от 1 до 32767."
+enchant-empty-hand: "&cВ этой игре нет зачарований на правую руку :D"
+enchant-applied: "&fЗачарование &b%enchantment% &fуровня &b%level% &fналожено на предмет в вашей руке."
+
+# Получение зелий
+potion-unknown-type: "&cНеизвестный тип зелья '%type%', укажите 'potion', 'splash' или 'cloud'."
+potion-unknown-effect: "&cНеизвестный эффект '%effect%', используйте подсказки над полем ввода."
+potion-full-inventory: "&cВ вашем инвентаре нет места для зелья."
+potion-wrong-amplifier: "&cНеверное значение силы эффекта, укажите значение от 1 до 255."
+potion-wrong-duration: "&cНеверное значение длительности эффекта, укажите значение больше 1."
+potion-received: "&fПолучено %type% зелье &b%effect% &fсилой &b%amplifier% &fи длительностью &b%time%&f."
+potion-type-potion: "обычное"
+potion-type-splash: "взрывное"
+potion-type-cloud: "туманное"
+
+# Открытие инвентарей игроков
+inventory-self: "&cНеужели так трудно нажать одну клавишу?"
+inventory-not-found: "&cИнвентарь оффлайн игрока %player% отсутствует в базе данных."
+enderchest-not-found: "&cЭндер-сундук оффлайн игрока %player% отсутствует в базе данных."
+
+# Управление списком координат
+coords-add-failed-max: "&cВы уже имеете максимальное количество записей."
+coords-add-failed-already: "&cСначала завершите создание передыдущей записи."
+coords-add-comment: "&fНапишите комментарий для новой записи &b(%x% %y% %z%) &fдлиной &b%limit% &fсимволов в чат."
+coords-add-comment-failed: "&cВаш комментарий слишком большой (%length%), сократите его до %limit% символов."
+coords-added: "&fДобавлена новая запись &b%comment%&f."
+coords-remove-failed: "&cЗаписи для (%x% %y% %z%) не обнаружено."
+coords-removed: "&fЗапись &b%comment% &fудалена."
+coords-list-empty: "&cУ вас нет записей."
+coords-list-page-empty: "&cСтраница %page% пуста."
+coords-list-header: "   &7Записи координат [%page%/%max_page%]"
+coords-list-body: " &b(%x% %y% %z%) &f&l- &f%comment%"
+coords-list-footer: " "
+
+# Телепортация наверх
+upward-denied-world-self: "&cВы не в обычном мире, телепортация отменена."
+upward-denied-world-other: "&cИгрок не в обычном мире, телепортация отменена."
+upward-self: "&fВы телепортированы наверх."
+upward-other: "&fИгрок &b%player% &fтелепортирован наверх."
+
+# Телепортация далее
+forward-history-empty: "&cВаша история телепортов пуста."
+forward-max: "&cВы уже на последней точке вашей истории телепортов."
+forward-one-step: "&fВы переместились обратно."
+forward-multisteps: "&fВы переместились на &b%steps% &fшагов обратно."
+
+# Телепортация назад
+back-history-empty: "&cВаша история телепортов пуста."
+back-min: "&cВы уже не первой точке вашей истории телепортов."
+back-one-step: "&fВы переместились назад."
+back-multisteps: "&fВы переместились на &b%steps% &fшагов назад."
+
+# История телепортов
+tphistory-empty: "&cИстория телепортов игрока %player% пуста."
+tphistory-page-empty: "&cСтраница %page% пуста."
+tphistory-hovertip: "&aНажмите, чтобы телепортироваться"
+tphistory-header: "   &7История телепортов [%page%/%max_page%]"
+tphistory-body: " &f%date% - %time%: &b(%from%) &f&l-> &b(%to%) &7(%cause%)"
+tphistory-footer: " "
+tpcause-command: 'Команда'
+tpcause-endgateway: 'Врата Края'
+tpcause-endportal: 'Портал Края'
+tpcause-enderpearl: 'Эндерпёрл'
+tpcause-netherportal: 'Портал в Ад'
+tpcause-plugin: 'Плагин'
+
+# Телепортация к себе
+tphere-self: "&cКакой в этом смысл?"
+tphere-other: "&fИгрок &b%player% &fтелепортирован к вам."
+
+# Различные сообщения
+plugin-reloaded: "&fBetterCommands перезагружен."
+enchant-trying: "&cЗачаровывание предметов в столе зачарований отключено."
+
+# Форматирование списка помощи
+help-header: "   &7Помощь для BetterCommands"
+help-footer: " "
+help-body: " &b/%command% &f&l- &f%description%"
+
+# Описание для команд в списке помощи
+help-descriptions:
+  help: 'Показать эту страницу'
+  clocks: 'Показать текущее время'
+  morning: 'Установить утреннее время'
+  day: 'Установить дневное время'
+  evening: 'Установить вечернее время'
+  night: 'Установить ночное время'
+  sun: 'Установить солнечную погоду'
+  rain: 'Установить дождливую погоду'
+  storm: 'Установить грозовую погоду'
+  gamemode: 'Изменить игровой режим'
+  heal: 'Восстановить здоровье'
+  feed: 'Восстановить сытость'
+  enchant: 'Зачаровать предмет в руке'
+  potion: 'Выдать себе зелье'
+  inventory: 'Открыть инвентарь'
+  enderchest: 'Открыть эндер-сундук'
+  coords-add: 'Создать новую запись'
+  coords-list: 'Показать список координат'
+  coords-remove: 'Удалить запись'
+  upward: 'Телепортироваться наверх'
+  back: 'Вернуться назад'
+  forward: 'Отменить возвращение'
+  tphistory: 'Посмотреть историю телепортов'
+  tphere: 'Телепортировать игрока к себе'
+  info: 'Показать информацию об игроке'
+  reload: 'Перезагрузить конфигурацию'
+
+# Узлы для списка помощи
+# Будут использованы после под-команды при необходимости
+help-nodes:
+  playeropt: '(игрок)'
+  playerreq: '[игрок]'
+  steps: '(шаги)'
+  enchantment: '[зачарование]'
+  level: '(уровень)'
+  type: '[тип]'
+  effect: '[эффект]'
+  amplifier: '(сила)'
+  duration: '(длительность)'
+  gamemode: '[0|1|2|3|ad|cr|sr|sp]'
+  xopt: '(x)'
+  yopt: '(y)'
+  zopt: '(z)'
+  xreq: '[x]'
+  yreq: '[y]'
+  zreq: '[z]'
+  page: '(стр)'
+  world: '(мир)'

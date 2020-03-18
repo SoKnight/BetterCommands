@@ -1,0 +1,145 @@
+#  +----------------------------------------------------------------------------------------------------------------------------+
+#  |    _____   _____   _____   _____   _____   ____       _____    ___    __   __   __   __    ___    _   _   ____    _____    |
+#  |   |  _  | |  ___| |_   _| |_   _| |  ___| |  _ \     |  ___|  / _ \  |  \_/  | |  \_/  |  / _ \  | \ | | |  _ \  /  ___\   |
+#  |   | |_| | | |___    | |     | |   | |___  | |_| |    | |     | | | | |       | |       | | |_| | |  \| | | | \ | | |___    |
+#  |   |  _ \  |  ___|   | |     | |   |  ___| |    /     | |     | | | | | |\_/| | | |\_/| | |  _  | |     | | | | | |___  |   |
+#  |   | |_| | | |___    | |     | |   | |___  | |\ \     | |___  | |_| | | |   | | | |   | | | | | | | |\  | | |_/ |  ___| |   |
+#  |   |_____| |_____|   |_|     |_|   |_____| |_| \_\    |_____|  \___/  |_|   |_| |_|   |_| |_| |_| |_| |_| |____/  \_____/   |
+#  |                                                                                                                            |
+#  |   Author: SoKnight                                                                                        Version: 1.0.0   |
+#  +----------------------------------------------------------------------------------------------------------------------------+
+#   
+# Useful resources:
+# - Available material-types: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# - Available sounds: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+#
+# Configuration of database
+database:
+  # Should plugin use SQLite Database as data storage?
+  # Specify 'true' for SQLite or 'false' for MySQL
+  use-sqlite: true
+  # MySQL configuration
+  host: localhost
+  port: 3306
+  name: bettercommands
+  user: admin
+  password: bettercommands
+  # SQLite configuration
+  file: database.db
+
+# Configuration of messages
+messages:
+  # Messages localization, available: [ru]
+  locale: ru
+  # Count of strings in entries lists
+  list-size: 10
+
+# Configuration for time change commands
+time:
+  # Custom time for four periods (in ticks)
+  morning: 23000
+  day: 6000
+  evening: 12500
+  night: 14000
+
+# Default enchantment level for /enchant command
+# Specify value from 1 to 32767
+default-ench-level: 1
+
+# Default potion effect amplifier for /potion command
+# Specify value from 1 to 255
+default-potion-amplifier: 1
+
+# Default potion duration for /potion command (in seconds)
+default-potion-duration: 30
+
+# Should plugin disable item enchanting using enchanting table
+disable-item-enchanting: true
+
+# Max stored coords per one player
+max-coords: 5
+
+# Max coords comment length
+coords-comment-length: 30
+
+# Date format for interfaces titles
+titles-date-format: 'dd.MM.yy - kk:mm:ss'
+
+# Date format for teleport history
+date-format: 'dd.MM.yy'
+
+# Time format for teleport history
+time-format: 'kk:mm:ss'
+
+# Time modifier for correct to cory UTC (for example - Moscow)
+# Specify value in minutes
+time-modifier: -240
+
+# Configuration for inventory window
+# Slots starts from 0 index
+inventory:
+  # Title for inventory window of online player
+  online-title: "Инвентарь %player%"
+
+  # Title for inventory window of offline player
+  offline-title: "Инвентарь %player% (%date%)"
+
+  # Count of rows in inventory window
+  rows: 6
+
+  # Start index for inventory content of player
+  start-index: 0
+
+  # Slot indexes for armor and hands items
+  helmet-slot: 46
+  chestplate-slot: 47
+  leggings-slot: 48
+  boots-slot: 49
+  left-hand-slot: 51
+  right-hand-slot: 52
+
+  # Interface of inventory window
+  background:
+    enabled: true
+    name: ' '
+    material: 'white_stained_glass_pane'
+    slots: [36, 41, 44, 45, 50, 53]
+  helmet-tip:
+    enabled: true
+    name: '&bСлот для шлема игрока'
+    material: 'red_stained_glass_pane'
+    slot: 37
+  chestplate-tip:
+    enabled: true
+    name: '&bСлот для нагрудника игрока'
+    material: 'orange_stained_glass_pane'
+    slot: 38
+  leggings-tip:
+    enabled: true
+    name: '&bСлот для понож игрока'
+    material: 'yellow_stained_glass_pane'
+    slot: 39
+  boots-tip:
+    enabled: true
+    name: '&bСлот для ботинок игрока'
+    material: 'lime_stained_glass_pane'
+    slot: 40
+  left-hand-tip:
+    enabled: true
+    name: '&bСлот для предмета в левой руке'
+    material: 'light_blue_stained_glass_pane'
+    slot: 42
+  right-hand-tip:
+    enabled: true
+    name: '&bСлот для предмета в правой руке'
+    material: 'blue_stained_glass_pane'
+    slot: 43
+
+# Configuration for enderchest window
+enderchest:
+  # Title for inventory window of command sender
+  self-title: "Эндер-сундук"
+  # Title for inventory window of online player
+  online-title: "Эндер-сундук %player%"
+  # Title for inventory window of offline player
+  offline-title: "Эндер-сундук %player% (%date%)"

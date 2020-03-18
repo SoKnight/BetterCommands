@@ -1,0 +1,143 @@
+name: ${project.name}
+main: bettercommands.BetterCommands
+author: SoKnight
+version: ${project.version}
+api-version: 1.15
+commands:
+  bettercommands:
+    aliases: [bc, bcommands]
+    description: Main plugin command
+    usage: /bcommands help
+  clocks:
+    description: View current time in world
+    usage: /clocks (world)
+  morning:
+    description: Sets morning time
+    usage: /morning (world)
+  day:
+    description: Sets day time
+    usage: /day (world)
+  evening:
+    description: Sets evening time
+    usage: /evening (world)
+  night:
+    description: Sets night time
+    usage: /night (world)
+  sun:
+    description: Sets sun weather
+    usage: /sun (world)
+  rain:
+    description: Sets rain weather
+    usage: /rain (world)
+  storm:
+    description: Sets storm weather
+    usage: /storm (world)
+  gamemode:
+    aliases: [gm]
+    description: Sets gamemode fast with legacy 0,1,2,3 args
+    usage: /gamemode [0|1|2|3|ad|cr|sr|sp] (player)
+  heal:
+    description: Heal yourself or other player
+    usage: /heal (player)
+  feed:
+    description: Feed yourself or other player
+    usage: /feed (player)
+  enchant:
+    description: Enchants item in your hand to any enchantments
+    usage: /enchant [enchantment] (level)
+  potion:
+    description: Gives any potion to you
+    usage: /potion [type] [effect] (amplifier) (duration)
+  inventory:
+    aliases: [open, openinv]
+    description: Views inventory of any player to you
+    usage: /inventory [player]
+  enderchest:
+    aliases: [echest, openender]
+    description: Views ender chest of any player to you
+    usage: /enderchest (player)
+  coords:
+    aliases: [locations, points]
+    description: Control players coordinations list
+    usage: /coords [add/list/remove] (player)
+  upward:
+    aliases: [up]
+    description: Teleports you or other player to the surface
+    usage: /upward (player)
+  forward:
+    aliases: [fw]
+    description: Teleports you to next location
+    usage: /forward (steps)
+  back:
+    aliases: [bk]
+    description: Teleports you to previous location
+    usage: /back (steps)
+  tphistory:
+    description: View teleports history of specified player
+    usage: /tphistory [player] (page)
+  tphere:
+    description: Teleport specified player to you
+    usage: /tphere [player]
+permissions:
+  bcommands.help:
+    default: true
+  bcommands.time.clocks:
+    default: op
+  bcommands.time.morning:
+    default: op
+  bcommands.time.day:
+    default: op
+  bcommands.time.evening:
+    default: op
+  bcommands.time.night:
+    default: op
+  bcommands.weather.sun:
+    default: op
+  bcommands.weather.rain:
+    default: op
+  bcommands.weather.storm:
+    default: op
+  bcommands.gamemode:
+    default: op
+  bcommands.gamemode.other:
+    default: op
+    children:
+      bcommands.gamemode: true
+  bcommands.heal:
+    default: op
+  bcommands.heal.other:
+    default: op
+    children:
+      bcommands.heal: true
+  bcommands.feed:
+    default: op
+  bcommands.feed.other:
+    default: op
+    children:
+      bcommands.feed: true
+  bcommands.enchant:
+    default: op
+  bcommands.potion:
+    default: op
+  bcommands.inventory:
+    default: op
+  bcommands.enderchest:
+    default: op
+  bcommands.coords:
+    default: true
+  bcommands.teleport.upward:
+    default: op
+  bcommands.teleport.upward.other:
+    default: op
+  bcommands.teleport.forward:
+    default: op
+  bcommands.teleport.back:
+    default: op
+  bcommands.teleport.history:
+    default: op
+  bcommands.teleport.here:
+    default: op
+  bcommands.info:
+    default: op
+  bcommands.reload:
+    default: op
